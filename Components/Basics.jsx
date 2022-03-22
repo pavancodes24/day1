@@ -7,13 +7,15 @@ function Basics() {
         return title;
     }
     const list = [{
-        name:'pavan',
+        id:1,
+        name: 'pavan',
         age: 25,
         occupation: 'sde1'
     },
-    {
-        name:'sunil',
-        age:27,
+    {   
+        id:2,
+        name: 'sunil',
+        age: 27,
         occupation: 'sde2'
     }]
     const abc = 'pavan'
@@ -21,7 +23,7 @@ function Basics() {
         <div>
             <div>hello {abc}</div>
             <div>{getTitle('React Title')}</div>
-            <div></div>
+            <div>{list.map(item => <div key={item.id}>{item.name}</div>)}</div>
         </div>
     )
 }
