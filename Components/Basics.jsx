@@ -23,7 +23,14 @@ function Basics() {
         <div>
             <div>hello {abc}</div>
             <div>{getTitle('React Title')}</div>
-            <div>{list.map(item => <div key={item.id}>{item.name}</div>)}</div>
+            <div>
+                {list.map(item => <div key={item.id}>
+                <div>{item.name}</div>
+                <div>{item.age}</div>
+                <div>{item.occupation}</div>
+                </div>
+                )}
+            </div>
         </div>
     )
 }
