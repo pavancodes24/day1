@@ -17,6 +17,7 @@ function Basics2() {
     return (
         <div>
             <Lst />
+            <Lst />
         </div>
     )
 }
